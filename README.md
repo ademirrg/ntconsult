@@ -66,9 +66,11 @@ Ex.: de resposta:
 {
     "Registro deletado"
 }
+
 =======================================================
 Votação
 =======================================================
+
 URI /vote/register(registra um voto para um usuário)
 Metodo POST
 Ex.: de resposta:
