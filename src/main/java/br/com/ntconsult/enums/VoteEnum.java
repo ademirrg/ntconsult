@@ -7,7 +7,8 @@ import lombok.Getter;
 @AllArgsConstructor
 public enum VoteEnum {
     SIM("S"),
-    NAO("N");
+    NAO("N"),
+    EMPATE("E");
 
     private final String description;
 }

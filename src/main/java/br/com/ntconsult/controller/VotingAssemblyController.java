@@ -5,10 +5,9 @@ import br.com.ntconsult.dto.VoteCountResponseDTO;
 import br.com.ntconsult.dto.VoteRequestDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import javax.validation.Valid;
 
 @RestController
 @RequestMapping("/vote")
@@ -18,7 +17,7 @@ public class VotingAssemblyController {
     VotingAssemblyBusiness business;
 
     @PostMapping("/register")
-    private ResponseEntity<String> registerVote(VoteRequestDTO requestDTO) {
+    private ResponseEntity<String> registerVote(@Valid @RequestBody VoteRequestDTO requestDTO) {
         business.registerVote(requestDTO);
         return ResponseEntity.ok("Voto registrado com sucesso.");
     }

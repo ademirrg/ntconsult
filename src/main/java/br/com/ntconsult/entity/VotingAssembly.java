@@ -1,5 +1,6 @@
 package br.com.ntconsult.entity;
 
+import br.com.ntconsult.enums.VoteEnum;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -17,7 +18,7 @@ public class VotingAssembly {
     private Long idUser;
 
     @Column(name = "vote")
-    private String vote;
+    private VoteEnum vote;
 
     @Column(name = "assembly_date")
     private LocalDateTime assemblyDate;

@@ -47,13 +47,13 @@ public class VotingAssemblyBusinessImpl implements VotingAssemblyBusiness {
     @Override
     public VoteCountResponseDTO countVotes() {
         Long totalVotes = repository.count();
-        Long votesYes = repository.countByVote(VoteEnum.SIM.getDescription());
-        Long votesNo = repository.countByVote(VoteEnum.NAO.getDescription());
+        Long votesYes = repository.countByVote(VoteEnum.SIM);
+        Long votesNo = repository.countByVote(VoteEnum.NAO);
         return VoteCountResponseDTO.builder()
                 .voteQuantity(totalVotes)
                 .voteYesQuantity(votesYes)
                 .voteNoQuantity(votesNo)
-                .winner(votesYes > votesNo ? VoteEnum.SIM : VoteEnum.NAO)
+                .winner(votesYes > votesNo ? VoteEnum.SIM : votesYes.equals(votesNo) ? VoteEnum.EMPATE : VoteEnum.NAO)
                 .build();
     }
 }

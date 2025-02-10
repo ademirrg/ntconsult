@@ -1,4 +1,4 @@
-create table person(
+create table ntconsult.person(
 id bigint not null auto_increment,
 name varchar(100) not null,
 document varchar(50) not null,

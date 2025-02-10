@@ -1,4 +1,4 @@
-create table voting_assembly(
+create table ntconsult.voting_assembly(
 id bigint not null auto_increment,
 id_user bigint not null,
 vote varchar(1) not null,

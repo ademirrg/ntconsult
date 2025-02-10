@@ -1,5 +1,5 @@
 # NTConsult
-Necessário ter o mysql server instalado com configuração de root padrão sem senha e na porta 3306, ou você poderá modificar as credenciais no arquivo application.properties.
+Necessário ter o mysql server instalado com configuração de root padrão com senha 123456 e na porta 3306, ou você poderá modificar as credenciais no arquivo application.properties.
 Estou utilizando um versionador de banco de dados chamado flyway, já possui scripts de criação da tabela de Pessoa.
 
 Para subir a aplicação, é necessário importar o projeto como Maven Project e deixar baixar as dependências, em seguida basta executar a classe principal SrmApp.
