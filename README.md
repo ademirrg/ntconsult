@@ -85,6 +85,6 @@ Ex.: de resposta:
 "voteQuantity": 1,
 "voteYesQuantity": 1,
 "voteNoQuantity": 1,
-"Winer": "SIM"
+"Winner": "SIM"
 }
 
