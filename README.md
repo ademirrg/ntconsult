@@ -2,7 +2,7 @@
 Necessário ter o mysql server instalado com configuração de root padrão com senha 123456 e na porta 3306, ou você poderá modificar as credenciais no arquivo application.properties.
 Estou utilizando um versionador de banco de dados chamado flyway, já possui scripts de criação da tabela de Pessoa.
 
-Para subir a aplicação, é necessário importar o projeto como Maven Project e deixar baixar as dependências, em seguida basta executar a classe principal SrmApp.
+Para subir a aplicação, é necessário importar o projeto como Maven Project e deixar baixar as dependências, em seguida basta executar a classe principal NtConsultApp.
 
 O Projeto foi feito em Java 11 com Spring Boot.
 
@@ -17,7 +17,7 @@ Metodo GET
 Ex.: de resposta:
 {
     "id": 1,
-    "name": "Fulano Srm da Silva",
+    "name": "Fulano Ntconsult da Silva",
     "document": "33333333333",
     "documentType": "CPF"
 }
@@ -28,13 +28,13 @@ Ex.: de resposta:
 [
     {
     "id": 1,
-    "name": "Fulano Srm da Silva",
+    "name": "Fulano Ntconsult da Silva",
     "document": "33333333333",
     "documentType": "CPF"
     },
     {
     "id": 2,
-    "name": "Ciclano Srm da Silva",
+    "name": "Ciclano Ntconsult da Silva",
     "document": "11111111000111",
     "documentType": "CNPJ"
     }
@@ -45,7 +45,7 @@ Metodo POST
 Ex.: de resposta:
 {
 "id": 1,
-"name": "Fulano Srm da Silva",
+"name": "Fulano Ntconsult da Silva",
 "document": "33333333333",
 "documentType": "CPF"
 }
@@ -55,7 +55,7 @@ Metodo PUT
 Ex.: de resposta:
 {
 "id": 1,
-"name": "Fulano Srm da Silva",
+"name": "Fulano Ntconsult da Silva",
 "document": "33333333333",
 "documentType": "CPF"
 }
