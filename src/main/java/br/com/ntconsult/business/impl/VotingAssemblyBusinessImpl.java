@@ -40,8 +40,9 @@ public class VotingAssemblyBusinessImpl implements VotingAssemblyBusiness {
         if(vote.isPresent()) {
             throw new BusinessException(VotingAssemblyExceptionEnum.VOTE_ALREADY_EXIST.getMessage());
         }
-        requestDTO.setAssemblyDate(LocalDateTime.now());
-        repository.save(mapper.map(requestDTO, VotingAssembly.class));
+        VotingAssembly votingAssembly = mapper.map(requestDTO, VotingAssembly.class);
+        votingAssembly.setAssemblyDate(LocalDateTime.now());
+        repository.save(votingAssembly);
     }
 
     @Override

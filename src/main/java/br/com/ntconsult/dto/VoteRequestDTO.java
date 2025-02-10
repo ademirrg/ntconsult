@@ -5,8 +5,6 @@ import lombok.Getter;
 import lombok.NonNull;
 import lombok.Setter;
 
-import java.time.LocalDateTime;
-
 @Getter
 @Setter
 public class VoteRequestDTO {
@@ -15,6 +13,4 @@ public class VoteRequestDTO {
 
     @NonNull
     private VoteEnum vote;
-
-    private LocalDateTime assemblyDate;
 }
